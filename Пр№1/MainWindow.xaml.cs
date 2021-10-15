@@ -43,9 +43,9 @@ namespace Пр_1
             bool f = Int32.TryParse(kol.Text, out koll);
             if (f == true)
             {
-                Class1.Proizv(koll, out string str, out string str1);
+                Class1.Proizv(koll, out string str, out int str1);
                 chisla.Text = str;
-                rez.Text = str1;
+                rez.Text = str1.ToString();
             }
             else MessageBox.Show("Ошибка ввода", "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Error) ;
         }

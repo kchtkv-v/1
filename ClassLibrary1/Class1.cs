@@ -9,17 +9,15 @@ namespace Lib_11
     public class Class1
     {
         /// <summary>
-        /// 
+        /// Расчёт функции
         /// </summary>
-        /// <param name="n"></param>
+        /// <param name="n">количество чисел</param>
         /// <param name="str"></param>
         /// <param name="str1"></param>
-        public static void Proizv(int n, out string str, out string str1)
+        public static void Proizv(int n, out string str, out int rezult)
         {
-
-            int rezult = 1;
+            rezult = 1;
             str = "";
-            str1 = "";
             Random rnd = new Random();
             if (n > 0)
             {
@@ -29,7 +27,6 @@ namespace Lib_11
                     str =str+ x.ToString() + ";"; 
                     rezult = rezult * x;
                 }
-                str1 = rezult.ToString();
             }
         }
     }
